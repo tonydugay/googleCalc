@@ -15,3 +15,10 @@ Feature: Check addition in Google calculator
      Given I open google
      When I enter "2+3" in search textbox
      Then I should get result as "5"
+
+
+   @smoke @regression
+   Scenario: Failing test
+     Given I open google
+     When I enter "2+3" in search textbox
+     Then I should get result as "4"
